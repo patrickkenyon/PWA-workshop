@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Implementing a PWA</title>
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+        <link href='css/style.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <h1>Completed Todo's</h1>
+        <div class="todos">
+            <?php
+            foreach($done as $todo) {
+                if (!empty($todo[1])) {
+                    echo '<div class="todo">' . $todo[1] . '</div>';
+                }
+            }
+            ?>
+        </div>
+        <br><br>
+        <a href="/">Back to Todo's</a>
+    </body>
+</html>
